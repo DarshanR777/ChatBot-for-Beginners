@@ -1,4 +1,4 @@
-// ai chat bot in c programming
+// Chat bot in C programming
 #include <stdio.h>    
 #include <conio.h>
 #include <string.h>
