@@ -4,6 +4,7 @@
 #include <string.h>
 #include <time.h>
 #include <stdlib.h>
+#include <Windows.h>
 
 #define MAX_INPUT_SIZE 50
 
@@ -13,9 +14,6 @@ int main()
 
     printf("Welcome to private Chat-bot\n");
     char name[15];
-    printf("Enter your Name: ");
-    fgets(name, sizeof(name), stdin);
-    name[strcspn(name, "\n")] = 0;
 
     while(1)
     {
@@ -30,51 +28,60 @@ int main()
 
 
         //Exit from Bot
-        if(strcmp(user_input,"exit")==0) 
+        if(strcmp(user_input,"exit")==0 || strcmp(user_input,"close")==0) 
         {
-            printf("bot ==> Thank you so much for your time, Have a nice day %s\n",name);
+            printf("bot ==> Thank you so much for your time, Have a nice day \n");
             break;
         }
 
-        else if(strcmp(user_input,"hi")==0)
+        else if(strcmp(user_input,"hi")==0 || strcmp(user_input,"hello")==0)
         {
-            printf("bot ==> Hi %s\n",name);
+            printf("bot ==> Hi user, How can I help you ?\n");
         }
 
         //Chrome
-        else if(strcmp(user_input,"open chrome")==0)
+        else if(strcmp(user_input,"open chrome")==0 || strcmp(user_input,"chrome")==0)
         {
             printf("Opening chrome browser\n");
              system("start chrome");
         }
 
         //Brave
-        else if(strcmp(user_input,"open brave")==0)
+        else if(strcmp(user_input,"open brave")==0 || strcmp(user_input,"brave")==0)
         {
             printf("Opening Brave\n");
              system("start Brave");
         }
 
         //Notepad
-        else if(strcmp(user_input,"open notepad")==0)
+        else if(strcmp(user_input,"open notepad")==0 || strcmp(user_input,"notepad")==0)
         {
             printf("Opening notepad editor\n");
             system("start notepad");
         }
 
         //Command Prompt
-        else if(strcmp(user_input,"open cmd")==0)
+        else if(strcmp(user_input,"open cmd")==0 || strcmp(user_input,"cmd")==0)
         {
             printf("Opening cmd terminal\n");
              system("start cmd");
         }
 
         //WordPad
-        else if(strcmp(user_input,"open wordpad")==0)
+        else if(strcmp(user_input,"open wordpad")==0 || strcmp(user_input,"wordpad")==0 || strcmp(user_input,"word")==0)
         {
             printf("Opening WordPad\n");
-             system("start WordPad");
+             system("start wordpad");
         }
+        
+        //Custom Applications
+        //VALORANT
+        else if(strcmp(user_input,"valorant")==0)
+        {
+            printf("Opening VALORANT\n");
+             ShellExecute(NULL,"open","C:\\Riot Games\\Riot Client\\RiotClientServices",NULL,NULL,SW_SHOW);
+        }
+
 
         //Time
         else if(strcmp(user_input,"time")==0)
@@ -88,7 +95,7 @@ int main()
             //print hour and second
             printf("bot ==> %02d:%02d:%02d\n",current_time->tm_hour,current_time->tm_min,current_time->tm_sec);
         }
-        else if(strcmp(user_input,"open youtube")==0)
+        else if(strcmp(user_input,"open youtube")==0 || strcmp(user_input,"youtube")==0)
         {
             printf("ok sir , opening youtube\n");  
             system("start http://youtube.com");   
