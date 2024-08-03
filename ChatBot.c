@@ -13,8 +13,9 @@ int main()
 
     printf("Welcome to private Chat-bot\n");
     char name[15];
-    printf("Enter your Name\n");
-    scanf("%s",name);
+    printf("Enter your Name: ");
+    fgets(name, sizeof(name), stdin);
+    name[strcspn(name, "\n")] = 0;
 
     while(1)
     {
@@ -69,7 +70,7 @@ int main()
         }
 
         //WordPad
-        else if(strcmp(user_input,"open word")==0)
+        else if(strcmp(user_input,"open wordpad")==0)
         {
             printf("Opening WordPad\n");
              system("start WordPad");
