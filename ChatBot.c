@@ -67,6 +67,13 @@ int main()
              system("start cmd");
         }
 
+         //Windows Powershell
+        else if(strcmp(user_input,"open powershell")==0 || strcmp(user_input,"powershell")==0)
+        {
+            printf("Opening Powershell\n");
+             system("start powershell");
+        }
+
         //WordPad
         else if(strcmp(user_input,"open wordpad")==0 || strcmp(user_input,"wordpad")==0 || strcmp(user_input,"word")==0)
         {
