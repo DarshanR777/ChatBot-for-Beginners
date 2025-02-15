@@ -6,14 +6,15 @@ After mastering the fundamentals of chatbot development in Java, you can try bui
 <b>Method 1: Using Eclipse Marketplace</b><br>
 Open Eclipse and go to the Help menu in the top navigation bar.<br>
 Click on Eclipse Marketplace and search for JavaFX.<br>
-Install the JavaFX plugin and restart Eclipse.<br>
-Method 2: Manual Installation (If Marketplace Doesn't Work)<br>
+Install the JavaFX plugin and restart Eclipse.<br><br>
+
+<b>Method 2: Manual Installation (If Marketplace Doesn't Work)</b><br>
 Open Eclipse and navigate to:<br>
 Help → Install New Software<br>
-Enter the following update site URL in the Work with field:<br>
+Enter the following update site URL in the Work with field:<br><br>
 
 Edit
-https://download.eclipse.org/efxclipse/updates-released/3.9.0/site/<br>
+https://download.eclipse.org/efxclipse/updates-released/3.9.0/site/<br><br>
 Select JavaFX and proceed with the installation.<br>
 Restart Eclipse after the installation is complete.<br><br>
 🔹 Features of This Chatbot<br>
