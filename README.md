@@ -1,10 +1,25 @@
-<p>This Chat-Bot repository is for beginners whos learning coding recently. <br>
-In this Repository we used basics of C language and Java to make sure that how Chat-Bot works<br>
-After understanding the basics of Java Code for Chat-Bot give it a try for ChatBot for JavaFx(Java GUI).</p>
-<br> <br>
-<p style : text-size :30px><span><b>Steps Involved in JavaFx Installation</b></span></p>
-<p>1. Those who are using Eclipse Go to <span>Help</span> section in top of the Navigation bar</p>
-<p>2. Go to Market Place and Search for JavaFx </p>
-<p>If market place is not opening the install manually.</p>
-<p><b>Help</b>-> <b>Install New Software</b> -> <a>https://download.eclipse.org/efxclipse/updates-released/3.9.0/site/
-</a></p>
+This Chatbot repository is designed for beginners who are new to coding and want to understand how a chatbot works. In this project, we use basic concepts of C and Java to demonstrate chatbot functionality.
+
+After mastering the fundamentals of chatbot development in Java, you can try building a JavaFX (Java GUI) chatbot for an enhanced user interface experience.
+
+🔹 Steps to Install JavaFX in Eclipse
+Method 1: Using Eclipse Marketplace
+Open Eclipse and go to the Help menu in the top navigation bar.
+Click on Eclipse Marketplace and search for JavaFX.
+Install the JavaFX plugin and restart Eclipse.
+Method 2: Manual Installation (If Marketplace Doesn't Work)
+Open Eclipse and navigate to:
+Help → Install New Software
+Enter the following update site URL in the Work with field:
+bash
+Copy
+Edit
+https://download.eclipse.org/efxclipse/updates-released/3.9.0/site/
+Select JavaFX and proceed with the installation.
+Restart Eclipse after the installation is complete.
+🔹 Features of This Chatbot
+✅ Simple rule-based chatbot using C and Java
+✅ Beginner-friendly code structure
+✅ Helps understand chatbot logic and functionality
+✅ Prepares you for JavaFX chatbot development
+
